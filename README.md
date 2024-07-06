@@ -10,8 +10,6 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
   - [Screenshot](#screenshot)
   - [Links](#links)
 
-- [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### The challenge
@@ -26,9 +24,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## Acknowledgments
-
-Frontend Mentor - https://www.frontendmentor.io
+- Solution URL: [Code](https://github.com/lkoster/social-links-profile-main)
+- Live Site URL: [https://lkoster.github.io/social-links-profile-main/](https://lkoster.github.io/social-links-profile-main/)
