@@ -1,0 +1,119 @@
+:root {
+  /* Primary */
+  --green: hsl(75, 94%, 57%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* To change rem to 10base */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: 'Inter', sans-serif;
+  color: var(--white);
+  background-color: var(--off-black);
+  height: 90vh;
+  padding: 3rem;
+
+  /* To align container in the middle of the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10rem;
+}
+/* --- */
+
+.card {
+  height: auto;
+  width: 100%;
+  border-radius: 9px;
+  background-color: var(--dark-grey);
+  padding: 2rem;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__header img {
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__header-neon {
+  color: var(--green);
+  margin-bottom: 1.5rem;
+}
+
+.card__header-quote {
+  margin-bottom: 1.6rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+.card__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem;
+  border-radius: 5px;
+  background-color: var(--grey);
+  transition: background-color ease-in-out 0.3s, color ease-in-out 0.3s;
+}
+
+.card__link a:link,
+.card__link a:visited {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.card__link:hover,
+.card__link:active {
+  cursor: pointer;
+  color: var(--off-black);
+  background-color: var(--green);
+}
+
+.card__link:hover a,
+.card__link:active a {
+  color: var(--off-black);
+}
+
+@media (min-width: 700px) {
+  body {
+    height: 100vh;
+  }
+  .card {
+    width: 400px;
+    padding: 3.2rem;
+  }
+}
